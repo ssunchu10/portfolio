@@ -11,6 +11,7 @@ import {
   Globe,
   MessageCircle,
 } from "lucide-react";
+import photo from "./vadane.jpg"
 
 
 // Component for handling section animations
@@ -49,26 +50,51 @@ const AnimatedSection = ({ id, className = "", children }) => {
   );
 };
 
-
 const IntroSection = () => {
   const typingRef = useRef(null);
 
   useEffect(() => {
-    // Typing animation effect
-    const text = "Global Tech Leader";
+    const text1 = "Shalmali Patil.";
+    const text2 = "Global Tech Leader.";
     let currentText = "";
     let letterIndex = 0;
-
+    let isTyping = true;
+    let isFirstText = true;
+    
     const typeWriter = () => {
-      if (letterIndex < text.length && typingRef.current) {
-        currentText += text[letterIndex];
-        typingRef.current.textContent = currentText;
-        letterIndex++;
-        setTimeout(typeWriter, 100);
+      const currentFullText = isFirstText ? text1 : text2;
+      
+      if (isTyping) {
+        if (letterIndex < currentFullText.length && typingRef.current) {
+          currentText += currentFullText[letterIndex];
+          typingRef.current.textContent = currentText;
+          letterIndex++;
+          setTimeout(typeWriter, 500);
+        } else {
+          isTyping = false;
+          setTimeout(typeWriter, 100); 
+        }
+      } else {
+        if (letterIndex > 0 && typingRef.current) {
+          currentText = currentFullText.substring(0, letterIndex - 1);
+          typingRef.current.textContent = currentText;
+          letterIndex--;
+          setTimeout(typeWriter, 50);
+        } else {
+          isTyping = true;
+          isFirstText = !isFirstText;
+          currentText = "";
+          letterIndex = 0;
+          setTimeout(typeWriter, 500);
+        }
       }
     };
-
+  
     typeWriter();
+  
+    return () => {
+      clearTimeout(typeWriter);
+    };
   }, []);
 
   return (
@@ -120,8 +146,7 @@ const IntroSection = () => {
               <div className="flex items-center">
                 {/* Forbes */}
                 <a href="https://councils.forbes.com/profile/Rignesh-Soni-Director-Strategic-Development-Metropolis/2d35d678-4ef1-4a0c-bbfe-ad4cccd8342c" 
-                   target="_blank" 
-                   className="md:mr-10 mr-8 group">
+                  className="md:mr-10 mr-8 group">
                   <svg className="w-6 h-6 fill-white group-hover:fill-[#CDFF00] transition-colors" viewBox="0 0 22 26">
                     <path d="M22 7.30113L20.7102 7.68869C19.623 3.87684 17.7016 1.70625 14.3886 1.70625H10.0639C9.82384 4.23922 9.70619 8.15466 9.82384 12.3801L12.7064 12.2249C14.6541 12.2249 15.4753 10.7908 15.9431 8.697H17.0306V17.5094H15.9431C15.4753 15.3766 14.6533 13.9344 12.7064 13.8137L9.82384 13.7751C9.82384 16.9154 9.8616 19.6032 10.0639 21.2314C10.2535 23.5576 10.8859 24.6171 12.5546 24.8369L14.1222 24.9921V26H0V24.9925L1.17576 24.8373C2.80664 24.6045 3.48117 23.5576 3.6664 21.2318C3.9824 17.4326 4.05832 9.31734 3.6664 4.80716C3.4768 2.40338 2.80664 1.43447 1.17576 1.24028L0 1.0465V0H21.9626L22 7.30113Z"/>
                   </svg>
@@ -129,7 +154,6 @@ const IntroSection = () => {
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/rigneshsoni/" 
-                   target="_blank" 
                    className="md:mr-10 mr-8 group">
                   <svg className="w-7 h-7 fill-white group-hover:fill-[#CDFF00] transition-colors" viewBox="0 0 30 30">
                     <path d="M27.7793 0H2.21484C0.990234 0 0 0.966797 0 2.16211V27.832C0 29.0273 0.990234 30 2.21484 30H27.7793C29.0039 30 30 29.0273 30 27.8379V2.16211C30 0.966797 29.0039 0 27.7793 0ZM8.90039 25.5645H4.44727V11.2441H8.90039V25.5645ZM6.67383 9.29297C5.24414 9.29297 4.08984 8.13867 4.08984 6.71484C4.08984 5.29102 5.24414 4.13672 6.67383 4.13672C8.09766 4.13672 9.25195 5.29102 9.25195 6.71484C9.25195 8.13281 8.09766 9.29297 6.67383 9.29297ZM25.5645 25.5645H21.1172V18.6035C21.1172 16.9453 21.0879 14.8066 18.8027 14.8066C16.4883 14.8066 16.1367 16.6172 16.1367 18.4863V25.5645H11.6953V11.2441H15.9609V13.2012H16.0195C16.6113 12.0762 18.0645 10.8867 20.2266 10.8867C24.7324 10.8867 25.5645 13.8516 25.5645 17.707V25.5645Z"/>
@@ -137,8 +161,7 @@ const IntroSection = () => {
                 </a>
 
                 {/* Twitter/X */}
-                <a href="https://x.com/rigsme007" 
-                   target="_blank" 
+                <a href="https://x.com/rigsme007"  
                    className="group">
                   <svg className="w-7 h-7 fill-white group-hover:fill-[#CDFF00] transition-colors" viewBox="0 0 28 26">
                     <path d="M21.9079 0.379883H26.1247L16.9121 10.9092L27.75 25.2373H19.264L12.6175 16.5474L5.01243 25.2373H0.79304L10.6468 13.975L0.25 0.379883H8.95139L14.9592 8.3228L21.9079 0.379883ZM20.4279 22.7134H22.7645L7.68174 2.7713H5.17433L20.4279 22.7134Z"/>
@@ -155,8 +178,8 @@ const IntroSection = () => {
           <div className="lg:col-span-4 col-span-12 max-lg:-order-1 bg-gray-400/10 h-full flex items-end justify-center">
             <div className="overflow-hidden rounded-3xl">
               <img 
-                src="/api/placeholder/408/612"
-                alt="Hero Image" 
+                src={photo}
+                alt="Hero" 
                 className="2xl:w-full h-full xl:max-h-none max-h-[450px]" 
                 width="408" 
                 height="612"
@@ -249,6 +272,7 @@ const PortfolioWebsite = () => {
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
             </div>
+
           </div>
           {isMenuOpen && (
             <div className="px-4 pb-3 animate-slideDown bg-black">
