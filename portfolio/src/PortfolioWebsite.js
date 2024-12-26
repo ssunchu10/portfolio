@@ -236,40 +236,6 @@ const PortfolioWebsite = () => {
         <main className="pt-16 lg:pt-0">
           {/* Introduction Section */}
           <AnimatedSection id="intro" className="bg-white">
-            <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">
-                Hi, I'm <span className="text-blue-600">Your Name</span>
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 animate-fadeInUp delay-200">
-                AI & Data Science Expert | Senior IEEE Member | Technology
-                Advisor
-              </p>
-              <div className="flex flex-wrap gap-4 mb-8 animate-fadeInUp delay-300">
-                <a
-                  href="#"
-                  className="hover-lift flex items-center text-gray-600 hover:text-blue-600"
-                >
-                  <span className="font-medium">LinkedIn</span>
-                </a>
-                <a
-                  href="#"
-                  className="hover-lift flex items-center text-gray-600 hover:text-blue-600"
-                >
-                  <span className="font-medium">Google Scholar</span>
-                </a>
-                <a
-                  href="#"
-                  className="hover-lift flex items-center text-gray-600 hover:text-blue-600"
-                >
-                  <Mail className="mr-2" size={20} />
-                  <span className="font-medium">Email</span>
-                </a>
-              </div>
-            </div>
-          </AnimatedSection>
-
-          {/* Expert Insights Section */}
-          <AnimatedSection id="expertise" className="bg-gray-50">
             <div className="max-w-6xl mx-auto px-4 lg:px-8">
               {/* Text Content */}
               <div className="w-full lg:w-2/3">
@@ -340,6 +306,31 @@ const PortfolioWebsite = () => {
                       </div>
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Expert Insights Section */}
+          <AnimatedSection id="expertise" className="bg-gray-50">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-8">Expert Insights</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="hover-lift bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                  <h3 className="text-xl font-semibold mb-4">
+                    AI & Machine Learning
+                  </h3>
+                  <p className="text-gray-600">
+                    Specialized expertise in developing and implementing AI
+                    solutions for enterprise applications.
+                  </p>
+                </div>
+                <div className="hover-lift bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                  <h3 className="text-xl font-semibold mb-4">Data Science</h3>
+                  <p className="text-gray-600">
+                    Advanced analytics and data-driven decision making for
+                    business intelligence.
+                  </p>
                 </div>
               </div>
             </div>
