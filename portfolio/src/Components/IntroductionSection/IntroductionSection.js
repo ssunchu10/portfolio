@@ -25,7 +25,9 @@ const IntroductionSection = () => {
 
     typeName("Shalmali Patil", nameRef, 150, () => {
       setTimeout(() => {
-        titleRef.current.textContent = "Global Tech Leader & Innovator";
+        // titleRef.current.textContent = "Global Tech Leader & Innovator";
+        titleRef.current.textContent = "BI Lead @ Amazon Web Services (AWS) | Award Winning Executive Infoscion | Researcher | ML | Data Analytics | Forecasting | Data Management";
+        // AWS Finance Analytics and Science Team BI Lead @ Amazon Web Services (AWS) | Award Winning Executive Infoscion | Researcher | ML | Data Analytics | Forecasting | Data Management
         titleRef.current.style.opacity = 1;
       }, 500);
     });
