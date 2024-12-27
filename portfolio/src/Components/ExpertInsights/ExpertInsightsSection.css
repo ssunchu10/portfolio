@@ -2,18 +2,18 @@
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 4rem 2rem;
-  }
-  
-  .section-title {
+}
+
+.section-title {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 2rem;
     position: relative;
     color: #CDFF00;
-  }
-  
-  .section-title::after {
+}
+
+.section-title::after {
     content: "";
     width: 50px;
     height: 4px;
@@ -22,36 +22,115 @@
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  .grid {
+}
+
+.grid {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-  
-  .research-card {
+}
+
+.research-card {
     background: #1f2937;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .research-card:hover {
+}
+
+.research-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .research-title {
+}
+
+.research-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #CDFF00;
-  }
-  
-  .research-description {
+}
+
+.research-description {
     color: #e5e7eb;
     line-height: 1.6;
-  }
-  
+}
+
+
+/**
+  */
+
+/* sections.css */
+.section-container {
+    @apply bg-black text-white py-16 min-h-screen;
+}
+
+.section-title {
+    @apply text-4xl font-bold mb-12;
+}
+
+.section-title-highlight {
+    @apply text-[#CDFF00];
+}
+
+/* Card animations */
+.card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* Icon animations */
+.icon-hover {
+    @apply transition-transform duration-300 group-hover:scale-110;
+}
+
+/* Text animations */
+.text-hover {
+    @apply transition-colors duration-300 group-hover:text-[#CDFF00];
+}
+
+/* Grid layouts */
+.grid-layout {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+/* Card styles */
+.card {
+    @apply border border-gray-800 rounded-lg p-6 hover:border-[#CDFF00];
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger delay classes */
+.stagger-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.stagger-delay-2 {
+    animation-delay: 0.2s;
+}
+
+.stagger-delay-3 {
+    animation-delay: 0.3s;
+}
+
+.stagger-delay-4 {
+    animation-delay: 0.4s;
+}
+
+.stagger-delay-5 {
+    animation-delay: 0.5s;
+}
