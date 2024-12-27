@@ -1,79 +1,124 @@
-import React from "react";
+// import React from 'react';
+// import './MembershipSection.css';
 
-import  "./MembershipSection.css";
+// const MembershipSection = () => {
+//   const memberships = [
+//     {
+//       title: "IEEE Senior Member",
+//       description: "Honored for significant contributions to technology and engineering.",
+//       year: "2024",
+//       logo: "path_to_ieee_logo.png"
+//     },
+//     {
+//       title: "AI and Data Science Advisory Board Member",
+//       description: "Retail AI Council: Driving AI strategies for retail transformation.",
+//       organization: "Retail AI Council",
+//       logo: "path_to_retail_ai_council_logo.png"
+//     },
+//     {
+//       title: "Business Analytics Advisory Board Member",
+//       description: "Cal Poly MS, Orfalea College of Business, San Luis Obispo, CA, USA",
+//       organization: "Cal Poly",
+//       logo: "path_to_cal_poly_logo.png"
+//     },
+//     {
+//       title: "Raptors Fellow",
+//       description: "Hackathon Raptors",
+//       organization: "Hackathon Raptors",
+//       logo: "path_to_raptors_logo.png"
+//     },
+//     // Add more memberships as needed
+//   ];
 
-const memberships = [
+//   return (
+//     <section className="membership-section">
+//       <div className="container">
+//         <h2 className="section-title">Professional Memberships</h2>
+//         <div className="membership-grid">
+//           {memberships.map((membership, index) => (
+//             <div key={index} className="membership-card">
+//               <img src={membership.logo} alt={membership.title} className="membership-logo" />
+//               <h3 className="membership-title">{membership.title}</h3>
+//               <p className="membership-description">{membership.description}</p>
+//               {membership.year && <p className="membership-year">Since {membership.year}</p>}
+//               {membership.organization && <p className="membership-org">{membership.organization}</p>}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default MembershipSection;
+
+import React from 'react';
+import './MembershipSection.css';
+
+const MembershipSection = () => {
+  const memberships = [
     {
       title: "IEEE Senior Member",
-      description: "Honored for significant contributions to technology and engineering. Member since 2024.",
-      link: "https://www.ieee.org/membership/senior/",
-      imgSrc: "https://www.example.com/ieee-logo.png", // Replace with actual logo URL
+      description: "Honored for significant contributions to technology and engineering.",
+      year: "2024",
+      logo: "path_to_ieee_logo.png"
     },
     {
       title: "AI and Data Science Advisory Board Member",
       description: "Retail AI Council: Driving AI strategies for retail transformation.",
-      link: "https://www.retailaicouncil.com/",
-      imgSrc: "https://www.example.com/ai-retail-logo.png", // Replace with actual logo URL
+      organization: "Retail AI Council",
+      logo: "path_to_retail_ai_council_logo.png"
     },
     {
       title: "Business Analytics Advisory Board Member",
-      description: "Advising for Cal Poly MS, Orfalea College of Business, San Luis Obispo, CA.",
-      link: "https://www.calpoly.edu/",
-      imgSrc: "https://www.example.com/business-logo.png", // Replace with actual logo URL
+      description: "Cal Poly MS, Orfalea College of Business, San Luis Obispo, CA, USA",
+      organization: "Cal Poly",
+      logo: "path_to_cal_poly_logo.png"
     },
     {
       title: "Raptors Fellow",
-      description: "Recognized by Hackathon Raptors for exemplary innovation in technology.",
-      link: "https://www.raptors.dev/",
-      imgSrc: "https://www.example.com/raptors-logo.png", // Replace with actual logo URL
+      description: "Recognized for innovation in technology",
+      organization: "Hackathon Raptors",
+      logo: "path_to_raptors_logo.png"
     },
     {
       title: "International Advisory Board Member",
-      description: "2024 IEEE International Conference on ARIIA.",
-      link: "https://www.ieee-ar.org/",
-      imgSrc: "https://www.example.com/ariia-logo.png", // Replace with actual logo URL
+      description: "2024 IEEE International Conference on ARIIA",
+      organization: "IEEE",
+      logo: "path_to_ieee_logo.png"
     },
     {
       title: "Department Advisory Board Member",
-      description: "MIT School of Computing, Pune, India.",
-      link: "https://mituniversity.ac.in/",
-      imgSrc: "https://www.example.com/mit-logo.png", // Replace with actual logo URL
+      description: "MIT School of Computing, Pune, India",
+      organization: "MIT University",
+      logo: "path_to_mit_logo.png"
     },
     {
       title: "Royal Fellow",
-      description: "Member of IOASD's executive committee, promoting academic and scientific excellence.",
-      link: "https://www.ioasd.org/",
-      imgSrc: "https://www.example.com/ioasd-logo.png", // Replace with actual logo URL
+      description: "Executive committee member of IOASD",
+      organization: "International Organization for Academic and Scientific Development",
+      logo: "path_to_ioasd_logo.png"
     },
     {
       title: "Early Adopter Member",
-      description: "AI Frontier Network: Advancing AI innovations and research.",
-      link: "https://www.aifrontiernetwork.org/",
-      imgSrc: "https://www.example.com/aifn-logo.png", // Replace with actual logo URL
-    },
+      description: "AI Frontier Network (AIFN)",
+      organization: "AIFN",
+      logo: "path_to_aifn_logo.png"
+    }
   ];
 
-const MembershipSection = () => {
   return (
-    <section id="membership" className="membership-section">
-      <div className="container mx-auto px-4 h-full flex flex-col justify-center">
-        <h2 className="section-title">My Professional Memberships</h2>
-        <div className="membership-slider">
+    <section className="membership-section">
+      <div className="container">
+        <h2 className="section-title">Professional Memberships</h2>
+        <div className="membership-grid">
           {memberships.map((membership, index) => (
             <div key={index} className="membership-card">
-              <div className="membership-image">
-                <img src={membership.imgSrc} alt={membership.title} />
-              </div>
-              <h4 className="membership-title">{membership.title}</h4>
+              <img src={membership.logo} alt={membership.title} className="membership-logo" />
+              <h3 className="membership-title">{membership.title}</h3>
               <p className="membership-description">{membership.description}</p>
-              <a
-                href={membership.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="membership-link"
-              >
-                Read More
-              </a>
+              {membership.year && <p className="membership-year">Since {membership.year}</p>}
+              {membership.organization && <p className="membership-org">{membership.organization}</p>}
             </div>
           ))}
         </div>
@@ -83,3 +128,4 @@ const MembershipSection = () => {
 };
 
 export default MembershipSection;
+

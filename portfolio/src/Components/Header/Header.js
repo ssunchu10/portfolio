@@ -75,11 +75,11 @@ const Header = () => {
         <div className="hidden lg:flex items-center space-x-8">
           <span className="text-gray-400 text-sm">
             <a href="tel:+1234567890" className="hover:text-[#CDFF00] transition-colors">
-              +1 (123) 456-7890
+              +1 (469) 614-9980
             </a>
             <span className="mx-2">/</span>
             <a href="mailto:shalupatil15@gmail.com" className="hover:text-[#CDFF00] transition-colors">
-              shalupatil15@example.com
+              shalupatil15@gmail.com
             </a>
           </span>
           <button

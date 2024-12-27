@@ -1,136 +1,53 @@
 .expert-insights-section {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: #000;
+    color: #fff;
     padding: 4rem 2rem;
-}
-
-.section-title {
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 2rem;
-    position: relative;
+    margin-bottom: 3rem;
     color: #CDFF00;
-}
-
-.section-title::after {
-    content: "";
-    width: 50px;
-    height: 4px;
-    background: #CDFF00;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.grid {
+  }
+  
+  .insights-grid {
     display: grid;
-    gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-
-.research-card {
-    background: #1f2937;
-    padding: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .insight-card {
+    background-color: #111;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.research-card:hover {
+  }
+  
+  .insight-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.research-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    box-shadow: 0 10px 20px rgba(205, 255, 0, 0.1);
+  }
+  
+  .insight-icon {
     color: #CDFF00;
-}
-
-.research-description {
-    color: #e5e7eb;
-    line-height: 1.6;
-}
-
-
-/**
-  */
-
-/* sections.css */
-.section-container {
-    @apply bg-black text-white py-16 min-h-screen;
-}
-
-.section-title {
-    @apply text-4xl font-bold mb-12;
-}
-
-.section-title-highlight {
-    @apply text-[#CDFF00];
-}
-
-/* Card animations */
-.card-hover {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-}
-
-/* Icon animations */
-.icon-hover {
-    @apply transition-transform duration-300 group-hover:scale-110;
-}
-
-/* Text animations */
-.text-hover {
-    @apply transition-colors duration-300 group-hover:text-[#CDFF00];
-}
-
-/* Grid layouts */
-.grid-layout {
-    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-6;
-}
-
-/* Card styles */
-.card {
-    @apply border border-gray-800 rounded-lg p-6 hover:border-[#CDFF00];
-}
-
-/* Fade in animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in {
-    animation: fadeInUp 0.6s ease-out forwards;
-}
-
-/* Stagger delay classes */
-.stagger-delay-1 {
-    animation-delay: 0.1s;
-}
-
-.stagger-delay-2 {
-    animation-delay: 0.2s;
-}
-
-.stagger-delay-3 {
-    animation-delay: 0.3s;
-}
-
-.stagger-delay-4 {
-    animation-delay: 0.4s;
-}
-
-.stagger-delay-5 {
-    animation-delay: 0.5s;
-}
+    margin-bottom: 1rem;
+  }
+  
+  .insight-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .insight-description {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  

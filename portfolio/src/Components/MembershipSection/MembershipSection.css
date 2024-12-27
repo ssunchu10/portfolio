@@ -1,93 +1,184 @@
-/* Membership Section Styles */
-.membership-section {
-    background-color: rgba(188, 188, 188, 0.1);
-    /* Light gray background */
+/* .membership-section {
+    background-color: #111;
+    color: #fff;
     padding: 4rem 2rem;
-    /* Adjust padding for spacing */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #CDFF00;
+  }
+  
+  .membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .membership-card {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(205, 255, 0, 0.1);
+  }
+  
+  .membership-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+  }
+  
+  .membership-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #CDFF00;
+  }
+  
+  .membership-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .membership-year,
+  .membership-org {
+    font-size: 0.8rem;
+    color: #999;
+  }
+   */
+
+.membership-section {
+  background-color: #000;
+  color: #fff;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2rem;
-    color: black;
-    /* Updated for visibility */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #cdff00;
+  position: relative;
+  display: inline-block;
 }
 
-.membership-slider {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: #cdff00;
+  bottom: -8px;
+  left: 20%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-title:hover::after {
+  transform: scaleX(1);
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 .membership-card {
-    background-color: white;
-    /* White background by default */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .membership-card:hover {
-    background-color: black;
-    /* Black background on hover */
-    transform: translateY(-10px);
-    color: white;
-    /* White text on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(205, 255, 0, 0.1);
+  background-color: rgba(205, 255, 0, 0.05);
 }
 
-.membership-image img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin: 0 auto 1rem;
-    border-radius: 50%;
-    background-color: black;
-    /* Black border background */
-    padding: 0.5rem;
+.membership-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 
 .membership-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: black;
-    /* Black text by default */
-    margin-bottom: 1rem;
-}
-
-.membership-card:hover .membership-title {
-    color: white;
-    /* White text on hover */
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #cdff00;
 }
 
 .membership-description {
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.7);
-    /* Gray text by default */
-    margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-.membership-card:hover .membership-description {
-    color: rgba(255, 255, 255, 0.7);
-    /* White text on hover */
+.membership-year,
+.membership-org {
+  font-size: 0.8rem;
+  color: #999;
+  transition: color 0.3s ease;
 }
 
-.membership-link {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.membership-card:hover .membership-description,
+.membership-card:hover .membership-year,
+.membership-card:hover .membership-org {
+  color: #cdff00;
 }
 
-.membership-card:hover .membership-link {
-    background-color: var(--primary-color);
-    color: black;
-    /* Black text inside the button on hover */
+@keyframesmes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membership-card {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .membership-section {
+    padding: 3rem 1rem;
+  }
+
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
 }
