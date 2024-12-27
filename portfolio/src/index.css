@@ -61,6 +61,14 @@ html {
 .sidebar {
   transition: var(--transition-base);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Position the sidebar absolutely within its parent */
+  top: 100%; /* Position it directly below the header */
+  left: 0;
+  width: 100%; /* Make it span the full width */
+  background-color: var(--bg-light); /* Adjust the background color */
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Add a border to separate from the header */
+  z-index: 10; /* Ensure it is above other content but below modals, etc. */
+  transition: var(--transition-base);
 }
 
 .nav-item {

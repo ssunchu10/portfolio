@@ -1,0 +1,93 @@
+/* Membership Section Styles */
+.membership-section {
+    background-color: rgba(188, 188, 188, 0.1);
+    /* Light gray background */
+    padding: 4rem 2rem;
+    /* Adjust padding for spacing */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+    /* Updated for visibility */
+}
+
+.membership-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.membership-card {
+    background-color: white;
+    /* White background by default */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.membership-card:hover {
+    background-color: black;
+    /* Black background on hover */
+    transform: translateY(-10px);
+    color: white;
+    /* White text on hover */
+}
+
+.membership-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: black;
+    /* Black border background */
+    padding: 0.5rem;
+}
+
+.membership-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+    /* Black text by default */
+    margin-bottom: 1rem;
+}
+
+.membership-card:hover .membership-title {
+    color: white;
+    /* White text on hover */
+}
+
+.membership-description {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    /* Gray text by default */
+    margin-bottom: 1.5rem;
+}
+
+.membership-card:hover .membership-description {
+    color: rgba(255, 255, 255, 0.7);
+    /* White text on hover */
+}
+
+.membership-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.membership-card:hover .membership-link {
+    background-color: var(--primary-color);
+    color: black;
+    /* Black text inside the button on hover */
+}
