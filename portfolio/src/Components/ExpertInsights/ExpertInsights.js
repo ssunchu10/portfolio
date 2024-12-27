@@ -48,49 +48,49 @@ import React from "react";
 import "./ExpertInsightsSection.css";
 
 const ExpertiseSection = () => {
-  const researchFields = [
-    {
-      title: "Artificial Intelligence",
-      description:
-        "Focus on creating intelligent systems capable of performing tasks that typically require human intelligence, including natural language processing, computer vision, and robotics.",
-    },
-    {
-      title: "Machine Learning",
-      description:
-        "Development and application of algorithms that improve automatically through experience. Emphasis on supervised, unsupervised, and reinforcement learning.",
-    },
-    {
-      title: "Data Management",
-      description:
-        "Expertise in organizing, storing, and retrieving large-scale datasets efficiently, ensuring data quality, security, and accessibility.",
-    },
-    {
-      title: "Business Intelligence",
-      description:
-        "Providing actionable insights through data visualization, reporting, and predictive analytics to drive strategic decision-making.",
-    },
-    {
-      title: "Data Analytics",
-      description:
-        "Application of statistical and computational methods to analyze data trends and patterns for enhanced business performance.",
-    },
-  ];
-
-  return (
-    <section className="expert-insights-section">
-      <div className="container">
-        <h2 className="section-title">Expert Insights</h2>
-        <div className="grid">
-          {researchFields.map((field, index) => (
-            <div key={index} className="research-card">
-              <h3 className="research-title">{field.title}</h3>
-              <p className="research-description">{field.description}</p>
-            </div>
-          ))}
+    const researchFields = [
+      {
+        title: "Artificial Intelligence",
+        description:
+          "Focus on creating intelligent systems capable of performing tasks that typically require human intelligence, including natural language processing, computer vision, and robotics.",
+      },
+      {
+        title: "Machine Learning",
+        description:
+          "Development and application of algorithms that improve automatically through experience. Emphasis on supervised, unsupervised, and reinforcement learning.",
+      },
+      {
+        title: "Data Management",
+        description:
+          "Expertise in organizing, storing, and retrieving large-scale datasets efficiently, ensuring data quality, security, and accessibility.",
+      },
+      {
+        title: "Business Intelligence",
+        description:
+          "Providing actionable insights through data visualization, reporting, and predictive analytics to drive strategic decision-making.",
+      },
+      {
+        title: "Data Analytics",
+        description:
+          "Application of statistical and computational methods to analyze data trends and patterns for enhanced business performance.",
+      },
+    ];
+  
+    return (
+      <section className="expert-insights-section">
+        <div className="container">
+          <h2 className="section-title">Expert Insights</h2>
+          <div className="grid">
+            {researchFields.map((field, index) => (
+              <div key={index} className="research-card">
+                <h3 className="research-title">{field.title}</h3>
+                <p className="research-description">{field.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-  );
-};
-
-export default ExpertiseSection;
+      </section>
+    );
+  };
+  
+  export default ExpertiseSection;
