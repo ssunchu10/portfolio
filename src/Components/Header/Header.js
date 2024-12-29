@@ -1,35 +1,62 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <header className="fixed w-full z-50 top-0 start-0 border-b border-white/20 bg-black/90 backdrop-blur-sm">
       <div className="flex flex-wrap items-center justify-between mx-auto lg:ml-64 px-4 h-16">
         {/* Logo Section */}
-        <a href="#" className="flex items-start rtl:space-x-reverse flex-col">
+        <a
+          href="#intro"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("intro");
+          }}
+          className="flex items-start rtl:space-x-reverse flex-col"
+        >
           <span className="text-xl font-semibold uppercase text-white">
-            <span className="text-[#CDFF00]">Shalmali</span> Patil
+            <span className="text-[#CDFF00]">Sumit</span> Sunchu
           </span>
           <span className="text-xs tracking-[4px] uppercase text-gray-400">
-            Innovator
+            Engineer
           </span>
         </a>
 
         {/* Contact Info and Button - Only show on larger screens */}
         <div className="hidden lg:flex items-center space-x-8">
           <span className="text-gray-400 text-sm">
-            <a href="tel:+1234567890" className="hover:text-[#CDFF00] transition-colors">
-              +1 (469) 614-9980
+            <a
+              href="tel:+1234567890"
+              className="hover:text-[#CDFF00] transition-colors"
+            >
+              +1 (903) 990-0356
             </a>
             <span className="mx-2">/</span>
-            <a href="mailto:shalupatil15@gmail.com" className="hover:text-[#CDFF00] transition-colors">
-              shalupatil15@gmail.com
+            <a
+              href="mailto:sumitsunchu@gmail.com"
+              className="hover:text-[#CDFF00] transition-colors"
+            >
+              sumitsunchu@gmail.com
             </a>
           </span>
           <button
             type="button"
+            onClick={() => scrollToSection("connect")}
             className="border border-[#CDFF00] text-[#CDFF00] py-2 px-6 hover:bg-[#CDFF00] hover:text-black text-sm font-semibold rounded-lg transition-all duration-300"
           >
-            Let's Connect
+            <Link to="/sumit-sunchu/protfolio-website#connect">
+              Let's Connect
+            </Link>
           </button>
         </div>
 

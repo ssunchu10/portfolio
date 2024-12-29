@@ -1,5 +1,4 @@
 import React from 'react';
-import { Users, Book, Award, Star, Briefcase, MessageCircle } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = ({ activeSection, sections }) => {

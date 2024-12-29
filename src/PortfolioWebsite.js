@@ -1,30 +1,27 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Menu,
   X,
-  Mail,
-  ExternalLink,
   Award,
   Briefcase,
   Book,
   Users,
-  Globe,
   MessageCircle,
+  FolderGit,
   Star
 } from 'lucide-react';
 import {
   ExpertiseSection,
   Header,
   MembershipSection,
-  JudgeAndPanelSection,
-  PublicationsSection,
   ProfessionalExperienceSection,
   ContactSection,
   AwardsSection,
   RecognitionSection,
   IntroductionSection,
   Navbar,
-  AnimatedSection
+  AnimatedSection,
+  ProjectsSection
 } from './Components';
 
 import './PortfolioWebsite.css';
@@ -60,10 +57,11 @@ const PortfolioWebsite = () => {
     { id: 'expertise', title: 'Expert Insights', icon: <Book size={20} /> },
     { id: 'membership', title: 'Professional Membership', icon: <Award size={20} /> },
     { id: 'recognitions', title: 'Recognitions', icon: <Star size={20} /> },
-    { id: 'panels', title: 'Judging & Panels', icon: <Users size={20} /> },
+    // { id: 'panels', title: 'Judging & Panels', icon: <Users size={20} /> },
     { id: 'awards', title: 'Awards', icon: <Award size={20} /> },
     { id: 'professional', title: 'Professional Experience', icon: <Briefcase size={20} /> },
-    { id: 'publications', title: 'Publications', icon: <Book size={20} /> },
+    { id: 'project', title: 'Projects', icon: <FolderGit size={20} />},
+    // { id: 'publications', title: 'Publications', icon: <Book size={20} /> },
     { id: 'connect', title: "Let's Connect", icon: <MessageCircle size={20} /> }
   ];
 
@@ -118,18 +116,21 @@ const PortfolioWebsite = () => {
             <AnimatedSection id="recognitions" className="bg-black">
               <RecognitionSection />
             </AnimatedSection>
-            <AnimatedSection id="panels" className="bg-black">
+            {/* <AnimatedSection id="panels" className="bg-black">
               <JudgeAndPanelSection />
-            </AnimatedSection>
+            </AnimatedSection> */}
             <AnimatedSection id="awards" className="bg-black">
               <AwardsSection />
             </AnimatedSection>
             <AnimatedSection id="professional" className="bg-black">
               <ProfessionalExperienceSection />
             </AnimatedSection>
-            <AnimatedSection id="publications" className="bg-black">
-              <PublicationsSection />
+            <AnimatedSection id="project" className="bg-black">
+              <ProjectsSection />
             </AnimatedSection>
+            {/* <AnimatedSection id="publications" className="bg-black">
+              <PublicationsSection />
+            </AnimatedSection> */}
             <AnimatedSection id="connect" className="bg-black">
               <ContactSection />
             </AnimatedSection>

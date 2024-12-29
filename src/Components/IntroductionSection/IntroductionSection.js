@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Linkedin, Book, Database, FileText, Award } from 'lucide-react';
-import photo from './shalmali_photo.jpg'; // Make sure to have the correct path to your photo
+import { Linkedin, Instagram, Github } from 'lucide-react';
+import photo from './sumit_photo.jpg'; 
 import './IntroductionSection.css';
 
 const IntroductionSection = () => {
@@ -11,7 +11,7 @@ const IntroductionSection = () => {
   useEffect(() => {
     const typeName = (text, ref, delay, callback) => {
       let i = 0;
-      ref.current.textContent = ''; // Clear the content before typing
+      ref.current.textContent = ''; 
       const interval = setInterval(() => {
         if (i < text.length) {
           ref.current.textContent = text.slice(0, i + 1);
@@ -23,11 +23,9 @@ const IntroductionSection = () => {
       }, delay);
     };
 
-    typeName("Shalmali Patil", nameRef, 150, () => {
+    typeName("Sumit Sunchu", nameRef, 150, () => {
       setTimeout(() => {
-        // titleRef.current.textContent = "Global Tech Leader & Innovator";
-        titleRef.current.textContent = "BI Lead @ Amazon Web Services (AWS) | Award Winning Executive Infoscion | Researcher | ML | Data Analytics | Forecasting | Data Management";
-        // AWS Finance Analytics and Science Team BI Lead @ Amazon Web Services (AWS) | Award Winning Executive Infoscion | Researcher | ML | Data Analytics | Forecasting | Data Management
+        titleRef.current.textContent = "Software Engineer | Full Stack Developer | Next.js & React Specialist | Database Architecture | Cloud Solutions Expert";
         titleRef.current.style.opacity = 1;
       }, 500);
     });
@@ -42,13 +40,9 @@ const IntroductionSection = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/shalmalipatil/', name: 'LinkedIn' },
-    { icon: <Database size={20} />, url: 'https://scholar.google.com/citations?user=2vPciC4AAAAJ&hl=en', name: 'Google Scholar' },
-    { icon: <Book size={20} />, url: 'https://www.researchgate.net/profile/Shalmali-Patil-2', name: 'ResearchGate' },
-    { icon: <FileText size={20} />, url: 'https://orcid.org/0009-0000-4091-2264', name: 'ORCID' },
-    { icon: <Award size={20} />, url: 'https://www.webofscience.com/wos/author/record/IUP-8957-2023', name: 'Publons' },
-    { icon: <FileText size={20} />, url: 'https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7228067', name: 'SSRN' },
-    { icon: <Book size={20} />, url: 'https://independent.academia.edu/ShalmaliPatil', name: 'Academia' },
+    { icon: <Linkedin size={20} />, url: 'https://www.linkedin.com/in/sumit-sunchu-6ab69b24b/', name: 'LinkedIn' },
+    { icon: <Instagram size={20} />, url: 'https://www.instagram.com/sumittt24/', name: 'Instagram'},
+    { icon: <Github size={20} />, url: 'https://github.com/ssunchu10', name: 'Github'},
   ];
 
   return (
@@ -64,14 +58,14 @@ const IntroductionSection = () => {
             </h1>
             <h2 ref={titleRef} className="title-text"></h2>
             <p className="intro-description">
-              As a data and AI leader with global experience, I specialize in transforming complex challenges into innovative solutions that drive business success. My expertise spans business intelligence, data analysis, machine learning applications and program management, with a proven track record of delivering impactful outcomes in enterprise software, cloud analytics, and AI-driven strategies. From contributing to groundbreaking research on ethical AI and recommender systems to leading transformative projects at Amazon, my journey reflects a commitment to innovation, excellence, and fostering inclusivity in technology while shaping a smarter, data-driven future.
+            As a dynamic Software Engineer with expertise in modern web technologies, I specialize in architecting scalable full-stack solutions that transform complex technical challenges into seamless user experiences. My journey spans from optimizing critical front-end systems at B2X Limited to developing innovative solutions at Olympiah, where I've consistently delivered performance improvements of 25-30% across various metrics. With deep expertise in Next.js, React, and database technologies like MongoDB and SQL, I bridge the gap between robust backend architecture and engaging frontend experiences.
             </p>
             <p className="intro-description">
-              Dedicated to fostering innovation and mentoring the next generation of leaders, I am committed to leveraging the power of data to create impactful solutions that shape the future of industries worldwide.
+            My portfolio showcases a diverse range of projects, from developing sophisticated multi-dashboard systems with role-based access control to creating intuitive movie search engines and real-time tracking applications. Committed to continuous innovation and technical excellence, I combine strong problem-solving abilities with collaborative leadership to deliver solutions that not only meet current needs but anticipate future challenges. Whether it's implementing OAuth 2.0 authentication systems or optimizing database queries, my approach is always focused on creating reliable, efficient, and user-centric applications that make a real impact.
             </p>
           </div>
           <div className="image-container">
-            <img src={photo} alt="Shalmali Patil" className="profile-image" />
+            <img src={photo} alt="Sumit Sunchu" className="profile-image" />
           </div>
         </div>
         <div className="social-links">
