@@ -55,13 +55,8 @@ const PortfolioWebsite = () => {
   const sections = [
     { id: 'intro', title: 'Introduction', icon: <Users size={20} /> },
     { id: 'expertise', title: 'Expert Insights', icon: <Book size={20} /> },
-    { id: 'membership', title: 'Professional Membership', icon: <Award size={20} /> },
-    { id: 'recognitions', title: 'Recognitions', icon: <Star size={20} /> },
-    // { id: 'panels', title: 'Judging & Panels', icon: <Users size={20} /> },
-    { id: 'awards', title: 'Awards', icon: <Award size={20} /> },
     { id: 'professional', title: 'Professional Experience', icon: <Briefcase size={20} /> },
     { id: 'project', title: 'Projects', icon: <FolderGit size={20} />},
-    // { id: 'publications', title: 'Publications', icon: <Book size={20} /> },
     { id: 'connect', title: "Let's Connect", icon: <MessageCircle size={20} /> }
   ];
 
@@ -110,27 +105,12 @@ const PortfolioWebsite = () => {
             <AnimatedSection id="expertise" className="bg-black">
               <ExpertiseSection />
             </AnimatedSection>
-            <AnimatedSection id="membership" className="bg-black">
-              <MembershipSection />
-            </AnimatedSection>
-            <AnimatedSection id="recognitions" className="bg-black">
-              <RecognitionSection />
-            </AnimatedSection>
-            {/* <AnimatedSection id="panels" className="bg-black">
-              <JudgeAndPanelSection />
-            </AnimatedSection> */}
-            <AnimatedSection id="awards" className="bg-black">
-              <AwardsSection />
-            </AnimatedSection>
             <AnimatedSection id="professional" className="bg-black">
               <ProfessionalExperienceSection />
             </AnimatedSection>
             <AnimatedSection id="project" className="bg-black">
               <ProjectsSection />
             </AnimatedSection>
-            {/* <AnimatedSection id="publications" className="bg-black">
-              <PublicationsSection />
-            </AnimatedSection> */}
             <AnimatedSection id="connect" className="bg-black">
               <ContactSection />
             </AnimatedSection>

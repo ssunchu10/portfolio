@@ -12,7 +12,7 @@
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://github.com/sumit-sunchu/protfolio-website",
+  "homepage": "https://ssunchu10.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
