@@ -26,7 +26,7 @@ const IntroductionSection = () => {
     typeName("Sumit Sunchu", nameRef, 150, () => {
       setTimeout(() => {
         titleRef.current.textContent =
-          "Software Engineer | Full Stack Developer | Next.js & React Specialist | Database Architecture | Cloud Solutions Expert";
+          "Software Engineer | Full Stack Developer | Node.js & React Specialist | Database Architecture | Cloud Solutions Expert";
         titleRef.current.style.opacity = 1;
       }, 500);
     });
