@@ -1,33 +1,38 @@
 import React from 'react';
-import { Brain, Database, ChartBar, LineChart, Network } from 'lucide-react';
+import { Plug, Database, LayoutDashboard, Cloud, Network } from 'lucide-react';
 import './ExpertInsightsSection.css';
 
 const ExpertInsightsSection = () => {
   const fields = [
     {
-      title: "Artificial Intelligence",
-      icon: <Brain size={24} />,
-      description: "Specializing in developing and implementing AI solutions for enterprise applications, with a focus on advanced predictive modelling and smart location strategies."
-    },
-    {
-      title: "Machine Learning",
+      title: "Full Stack Development",
       icon: <Network size={24} />,
-      description: "Expertise in developing ML models for revenue realization estimates, customer behavior prediction, and fraud detection, with a focus on improving accuracy and efficiency."
+      description:
+        "Experienced in building and maintaining scalable web applications using React, Next.js, Node.js, and Spring Boot. Proven ability to deliver responsive UIs and robust backend systems with seamless API integrations."
     },
     {
-      title: "Data Management",
+      title: "Cloud & DevOps",
+      icon: <Cloud size={24} />,
+      description:
+        "Skilled in deploying and managing applications on AWS (Lambda, EC2, S3), Docker, and Kubernetes. Experienced with CI/CD pipelines using GitHub Actions and infrastructure as code with Terraform."
+    },
+    {
+      title: "Database Management",
       icon: <Database size={24} />,
-      description: "Advanced skills in data modeling, ETL processes, and managing large-scale datasets using cloud-based technologies like AWS Redshift, S3, and Glue."
+      description:
+        "Proficient in designing and managing relational and NoSQL databases, including MongoDB, MySQL, and PostgreSQL. Experienced with ORMs like Prisma and Mongoose for optimized data access."
     },
     {
-      title: "Business Intelligence",
-      icon: <ChartBar size={24} />,
-      description: "Proficient in creating BI dashboards and reports using tools like Tableau, Python, and OBIEE for financial, sales, and demographic data analytics."
+      title: "Frontend Engineering",
+      icon: <LayoutDashboard size={24} />,
+      description:
+        "Adept at building responsive and accessible user interfaces using React.js, Next.js, Tailwind CSS, and Bootstrap. Focused on enhancing performance, usability, and user engagement."
     },
     {
-      title: "Data Analytics",
-      icon: <LineChart size={24} />,
-      description: "Specialized in applying statistical and computational methods to analyze data trends and patterns, enhancing business performance and decision-making processes."
+      title: "API Development",
+      icon: <Plug size={24} />,
+      description:
+        "Expert in creating and integrating RESTful APIs and microservices with Node.js and Express.js. Ensures scalability, security, and efficient communication across distributed systems."
     }
   ];
 

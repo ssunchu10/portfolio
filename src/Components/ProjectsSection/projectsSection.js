@@ -5,6 +5,24 @@ import './projectsSection.css';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "AI Image Generator",
+      description: "A web application that allows users to generate high-quality images from text prompts using OpenAI's DALL·E API. Built a responsive React interface with real-time image rendering and download functionality. Implemented secure API integration and error handling for seamless user experience.",
+      technologies: ["React", "OpenAI API", "DALL·E", "Tailwind CSS"],
+      icon: <Cloud className="w-6 h-6" />
+    },
+    {
+      title: "Habit Tracker",
+      description: "A habit tracking application with user login, progress analytics, and customizable habit plans. Built using React for the frontend and Express.js with Prisma and MySQL for the backend, ensuring efficient data modeling and seamless performance.",
+      technologies: ["React", "Express.js", "Prisma", "MySQL"],
+      icon: <BookOpen className="w-6 h-6" />
+    },
+    {
+      title: "DevOps Dashboard",
+      description: "A monitoring and reporting dashboard for CI/CD pipelines and cloud infrastructure. Visualized deployments, test results, and resource usage across AWS services and Docker containers. Integrated with GitHub Actions and built with React and Chart.js.",
+      technologies: ["React", "Chart.js", "GitHub Actions", "AWS", "Docker"],
+      icon: <Cloud className="w-6 h-6" />
+    },
+    {
       title: "QuizWhiz",
       description: "A cross-platform quiz application built with React Native, featuring real-time multiplayer functionality and progress tracking. Implemented CI/CD using GitHub workflows for automated testing and deployment. Integrated with backend APIs and implemented automated deployment pipelines.",
       technologies: ["React Native", "Django", "GitHub Actions", "WebSocket"],

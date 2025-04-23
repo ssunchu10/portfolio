@@ -93,6 +93,27 @@
   line-height: 1.6;
 }
 
+.tech-badge {
+  display: inline-block;
+  background-color: rgba(163, 255, 117, 0.1); 
+  color: #cdff00;
+  border: 1px solid #a3ff75;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  margin: 0.25rem;
+  font-weight: 600;
+  text-shadow: 0 0 2px #a3ff75;
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background-color: #a3ff75;
+  color: #000;
+  text-shadow: none;
+}
+
+
 @media (max-width: 768px) {
   .professional-experience-section {
     padding: 3rem 1rem;
