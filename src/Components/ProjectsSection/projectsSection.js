@@ -18,8 +18,8 @@ const ProjectsSection = () => {
     },
     {
       title: "DevOps Dashboard",
-      description: "A monitoring and reporting dashboard for CI/CD pipelines and cloud infrastructure. Visualized deployments, test results, and resource usage across AWS services and Docker containers. Integrated with GitHub Actions and built with React and Chart.js.",
-      technologies: ["React", "Chart.js", "GitHub Actions", "AWS", "Docker"],
+      description: "A monitoring and reporting dashboard for CI/CD pipelines and cloud infrastructure. Visualized deployments, test results, and resource usage across AWS services and Docker containers. Integrated GitHub Actions for CI/CD, and used Terraform to provision and manage AWS infrastructure as code. Built with React and Chart.js for interactive visualizations.",
+      technologies: ["React", "Chart.js", "GitHub Actions", "AWS", "Docker", "Terraform"],
       icon: <Cloud className="w-6 h-6" />
     },
     {

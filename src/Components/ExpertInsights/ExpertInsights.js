@@ -14,7 +14,7 @@ const ExpertInsightsSection = () => {
       title: "Cloud & DevOps",
       icon: <Cloud size={24} />,
       description:
-        "Skilled in deploying and managing applications on AWS (Lambda, EC2, S3), Docker, and Kubernetes. Experienced with CI/CD pipelines using GitHub Actions and infrastructure as code with Terraform."
+        "Skilled in deploying and managing applications on AWS (Lambda, EC2, S3), GCP (Compute Engine, Cloud Functions, Cloud Storage) Docker, and Kubernetes. Experienced with CI/CD pipelines using GitHub Actions and infrastructure as code with Terraform."
     },
     {
       title: "Database Management",
