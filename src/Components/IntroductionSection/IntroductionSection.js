@@ -87,7 +87,7 @@ const IntroductionSection = () => {
             <p className="intro-description">
               At Olympiah, I operate at a leadership level, mentoring
               developers, architecting RESTful APIs, and deploying microservices
-              with Docker and Kubernetes on GCP. My work consistently improves
+              with Docker and Kubernetes on AWS. My work consistently improves
               key metrics, including a 30% reduction in load times and enhanced
               system stability. From integrating Google Maps and OAuth 2.0 in
               e-commerce dashboards to building secure backend solutions using

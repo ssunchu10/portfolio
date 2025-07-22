@@ -9,7 +9,7 @@ const ProfessionalExperienceSection = () => {
       company: "Olympiah",
       period: "Dec 2024 - Present",
       description:
-        "Operating at a leadership level in an early-stage startup, I mentor junior developers and lead technical decisions across projects. I architect and optimize RESTful APIs using Node.js and MongoDB, and build high-performance front-end applications with React and Next.js. I also implement GCP solutions (Compute Engine, Cloud Functions, Cloud Storage), containerize deployments with Docker and Kubernetes, and integrate Elasticsearch/OpenSearch to enhance application responsiveness and search performance.",
+        "Operating at a leadership level in an early-stage startup, I mentor junior developers and lead technical decisions across projects. I architect and optimize RESTful APIs using Node.js and MongoDB, and build high-performance front-end applications with React and Next.js. I also implement AWS solutions, containerize deployments with Docker and Kubernetes, and integrate Elasticsearch/OpenSearch to enhance application responsiveness and search performance.",
 
       technologies: [
         "Next.js",
@@ -19,7 +19,7 @@ const ProfessionalExperienceSection = () => {
         "MongoDB",
         "Docker",
         "Kubernetes",
-        "GCP",
+        "AWS",
         "Elasticsearch",
       ],
       icon: <Code size={24} />,

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-// Component for handling section animations
 const AnimatedSection = ({ id, className = '', children }) => {
     const [isVisible, setIsVisible] = useState(false);
 

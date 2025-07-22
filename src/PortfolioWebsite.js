@@ -13,11 +13,8 @@ import {
 import {
   ExpertiseSection,
   Header,
-  MembershipSection,
   ProfessionalExperienceSection,
   ContactSection,
-  AwardsSection,
-  RecognitionSection,
   IntroductionSection,
   Navbar,
   AnimatedSection,

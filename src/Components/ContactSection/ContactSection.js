@@ -20,10 +20,6 @@ const ContactSection = () => {
                 <Linkedin size={20} />
                 <span>LinkedIn Profile</span>
               </a>
-              {/* <a href="https://twitter.com/ShalmaliPatil" target="_blank" rel="noopener noreferrer" className="contact-link">
-                <Twitter size={20} />
-                <span>@ShalmaliPatil</span>
-              </a> */}
               <a href="https://github.com/ssunchu10" target="_blank" rel="noopener noreferrer" className="contact-link">
                 <Github size={20} />
                 <span>GitHub Profile</span>
