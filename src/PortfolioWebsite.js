@@ -104,6 +104,16 @@ const PortfolioWebsite = () => {
     }
   };
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <>
       <Header />
@@ -118,15 +128,29 @@ const PortfolioWebsite = () => {
         <div className="main-content">
           <nav className="mobile-nav">
             <div className="mobile-nav-header">
-              <span className="portfolio-title">Portfolio</span>
+              <a
+                href="#intro"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("intro");
+                }}
+                className="flex items-start rtl:space-x-reverse flex-col"
+              >
+                <span className="text-xl font-semibold uppercase text-white">
+                  <span className="text-[#CDFF00]">Sumit</span> Sunchu
+                </span>
+                <span className="text-xs tracking-[4px] uppercase text-gray-400">
+                  Engineer
+                </span>
+              </a>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="menu-button"
+                className={`menu-button ${isMenuOpen ? "open" : ""}`}
                 aria-expanded={isMenuOpen}
                 aria-controls="mobile-menu"
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
             </div>
             {isMenuOpen && (

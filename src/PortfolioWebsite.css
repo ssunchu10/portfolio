@@ -45,11 +45,48 @@
 
 .menu-button {
   color: #fff;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
+  background: rgba(205,255,0,0.06);
+}
+
+.menu-button.open {
+  background: rgba(205,255,0,0.12);
+  color: black;
+  border-color: rgba(205,255,0,0.2);
+}
+
+.mobile-logo {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.mobile-name .highlight {
+  color: #CDFF00;
+}
+
+.mobile-role {
+  color: #9CA3AF;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
 }
 
 .mobile-menu {
