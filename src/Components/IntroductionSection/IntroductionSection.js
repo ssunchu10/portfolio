@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Linkedin, Instagram, Github } from "lucide-react";
+import React, { useEffect, useRef } from "react";
+import { Linkedin, Mail, Github } from "lucide-react";
 import photo from "./sumit_photo.jpg";
 import "./IntroductionSection.css";
 
 const IntroductionSection = () => {
   const nameRef = useRef(null);
   const titleRef = useRef(null);
-  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
     const typeName = (text, ref, delay, callback) => {
@@ -26,18 +25,12 @@ const IntroductionSection = () => {
     typeName("Sumit Sunchu", nameRef, 150, () => {
       setTimeout(() => {
         titleRef.current.textContent =
-          "Software Engineer | Full Stack Developer | Node.js & React Specialist | Database Architecture | Cloud Solutions Expert";
+          "Full Stack Developer |  Scalable Solutions | Database Architecture | Cloud Solutions Expert";
         titleRef.current.style.opacity = 1;
       }, 500);
     });
 
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev);
-    }, 500);
-
-    return () => {
-      clearInterval(cursorInterval);
-    };
+    return () => {};
   }, []);
 
   const socialLinks = [
@@ -47,9 +40,9 @@ const IntroductionSection = () => {
       name: "LinkedIn",
     },
     {
-      icon: <Instagram size={20} />,
-      url: "https://www.instagram.com/sumittt24/",
-      name: "Instagram",
+      icon: <Mail size={20} />,
+      url: "mailto:sumitsunchu@gmail.com",
+      name: "Email",
     },
     {
       icon: <Github size={20} />,
@@ -67,33 +60,40 @@ const IntroductionSection = () => {
               <span className="hello-text">Hello, I'm</span>
               <br />
               <span ref={nameRef} className="name-text"></span>
-              <span
-                className={`cursor ${showCursor ? "visible" : "invisible"}`}
-              >
-                |
-              </span>
             </h1>
-            <h2 ref={titleRef} className="title-text"></h2>
+            <h2 ref={titleRef} className="title-text">
+              Full Stack Developer | Scalable Solutions | Database Architecture
+              | Cloud Solutions Expert
+            </h2>
             <p className="intro-description">
-              I'm a results-driven Software Engineer with nearly 3 years of
-              hands-on experience building scalable full-stack applications
-              using React, Next.js, Node.js, and Spring Boot. I've contributed
-              to both startups and established companies, leading projects that
-              span front-end development, API architecture, and cloud-based
+              I am a results driven Software Engineer with hands on experience
+              building scalable full stack applications, with a strong focus on
+              integrating AI capabilities into products to deliver smarter, more
+              adaptive user experiences. I've contributed to both startups and
+              established companies, leading projects that span front-end
+              development, system design, backend architecture, and cloud-based
               deployments. My expertise lies in bridging performance with
               usability, optimizing systems for speed, scalability, and
               responsiveness.
             </p>
             <p className="intro-description">
-              At Olympiah, I operate at a leadership level, mentoring
-              developers, architecting RESTful APIs, and deploying microservices
-              with Docker and Kubernetes on AWS. My work consistently improves
-              key metrics, including a 30% reduction in load times and enhanced
-              system stability. From integrating Google Maps and OAuth 2.0 in
-              e-commerce dashboards to building secure backend solutions using
-              MongoDB, Prisma, and MySQL, my portfolio reflects a commitment to
-              clean code, modern design principles, and robust, user-centric
-              engineering.
+              I am currently developing SaaS applications at Six, where I build
+              and scale AI-integrated, full-stack systems with a focus on
+              performance, reliability, and product impact. My work spans
+              backend architecture, microservices, and production-ready
+              deployments, with an emphasis on integrating AI capabilities into
+              real user workflows.
+            </p>
+            <p className="intro-description">
+              Previously at Olympiah, I operated at a leadership level,
+              mentoring engineers, architecting RESTful APIs, and deploying
+              microservices using Docker and Kubernetes on AWS. I drove
+              measurable improvements, including a 30 percent reduction in load
+              times and increased system stability. My experience includes
+              Google Maps and OAuth 2.0 integrations for e-commerce dashboards,
+              and secure backend systems built with MongoDB, Prisma, and MySQL.
+              Across roles, I prioritize clean code, scalable design, and
+              user-centric engineering.
             </p>
           </div>
           <div className="image-container">

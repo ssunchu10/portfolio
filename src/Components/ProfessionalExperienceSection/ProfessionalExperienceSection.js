@@ -5,11 +5,34 @@ import "./ProfessionalExperienceSection.css";
 const ProfessionalExperienceSection = () => {
   const experiences = [
     {
+      title: "Founding Engineer",
+      company: "Six Social App (backed by Antler)",
+      period: "Oct 2025 - Present",
+      description:
+        "Founding engineer responsible for designing and owning the core backend architecture of an AI-driven social platform. Built REST APIs and microservices using TypeScript, Node.js, and FastAPI across authentication, feeds, recommendations, and AI-powered features. Developed GPT-based AI agent workflows for chat and personalized recommendations, enabling real-time user interactions. Designed data ingestion and transformation pipelines using PostgreSQL and Neo4j, optimized with indexing and caching to reduce decision latency by 35%. Improved release quality by 40% through unit, integration, and CI testing, contributing to a 20% uplift in early user engagement.",
+
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "FastAPI",
+        "Supabase",
+        "Twilio",
+        "PostgreSQL",
+        "Neo4j",
+        "React Native",
+        "Docker",
+        "AWS",
+        "LLMs",
+        "CI/CD",
+      ],
+      icon: <Code size={24} />,
+    },
+    {
       title: "Software Engineer",
       company: "Olympiah",
-      period: "Dec 2024 - Present",
+      period: "Dec 2024 - Sep 2025",
       description:
-        "Operating at a leadership level in an early-stage startup, I mentor junior developers and lead technical decisions across projects. I architect and optimize RESTful APIs using Node.js and MongoDB, and build high-performance front-end applications with React and Next.js. I also implement AWS solutions, containerize deployments with Docker and Kubernetes, and integrate Elasticsearch/OpenSearch to enhance application responsiveness and search performance.",
+        "Worked at a leadership level in an early-stage SaaS startup, mentoring junior developers and leading technical decisions across multiple projects. Architected and optimized RESTful APIs using Node.js and MongoDB, and built high-performance frontend applications with React and Next.js. Implemented AWS infrastructure, containerized deployments using Docker and Kubernetes, and integrated Elasticsearch/OpenSearch to improve application responsiveness and search performance.",
 
       technologies: [
         "Next.js",
@@ -29,18 +52,18 @@ const ProfessionalExperienceSection = () => {
       company: "Innovative Configuration",
       period: "Aug 2024 - Dec 2024",
       description:
-        "Architected and developed three role-based eCommerce dashboards using Next.js and Google Sign-In (OAuth 2.0). Integrated InFisical for secure configuration management and Google Maps API for location-based services. Designed responsive UIs with Tailwind CSS and implemented backend logic using NestJS and Prisma ORM with MongoDB. The platform was containerized and deployed on DigitalOcean.",
+        "Designed and developed three role-based e-commerce dashboards using Next.js with Google Sign-In (OAuth 2.0). Integrated Google Maps APIs for location-based features and implemented secure backend services using NestJS and Prisma with MongoDB. Built responsive user interfaces with Tailwind CSS and deployed containerized applications on DigitalOcean.",
 
       technologies: [
         "Next.js",
         "React",
         "Tailwind CSS",
         "Google Sign-In",
+        "OAuth 2.0",
         "MongoDB",
         "Prisma",
         "NestJS",
         "DigitalOcean",
-        "OAuth 2.0",
       ],
       icon: <Building2 size={24} />,
     },
@@ -49,7 +72,7 @@ const ProfessionalExperienceSection = () => {
       company: "B2X Limited",
       period: "Jul 2021 - Jun 2023",
       description:
-        "Played a key role in enhancing UI consistency and performance by resolving front-end issues in div-based layouts. Improved page responsiveness by 25% and reduced user-reported errors by 30%. On the backend, developed Node.js/Express servers with MySQL, and managed containerized deployments with Docker and Kubernetes, resulting in a 40% reduction in load times and a 25% increase in user engagement.",
+        "Improved frontend consistency and performance by resolving layout and responsiveness issues, leading to a 25% improvement in page responsiveness and a 30% reduction in user-reported errors. Built and maintained Node.js and Express backend services with MySQL, and managed containerized deployments using Docker and Kubernetes, achieving a 40% reduction in load times and a 25% increase in user engagement.",
 
       technologies: [
         "JavaScript",
