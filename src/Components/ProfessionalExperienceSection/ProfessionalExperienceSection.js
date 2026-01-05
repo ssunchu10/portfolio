@@ -9,7 +9,7 @@ const ProfessionalExperienceSection = () => {
       company: "Six Social App (backed by Antler)",
       period: "Oct 2025 - Present",
       description:
-        "Founding engineer responsible for designing and owning the core backend architecture of an AI-driven social platform. Built REST APIs and microservices using TypeScript, Node.js, and FastAPI across authentication, feeds, recommendations, and AI-powered features. Developed GPT-based AI agent workflows for chat and personalized recommendations, enabling real-time user interactions. Designed data ingestion and transformation pipelines using PostgreSQL and Neo4j, optimized with indexing and caching to reduce decision latency by 35%. Improved release quality by 40% through unit, integration, and CI testing, contributing to a 20% uplift in early user engagement.",
+        "Founding engineer responsible for designing and owning the core backend architecture of an AI-driven social platform. Built REST APIs and microservices using TypeScript, FastAPI and Node.js across authentication, feeds, recommendations, and AI-powered features. Developed GPT-based AI agent workflows for chat and personalized recommendations, enabling real-time user interactions. Designed data ingestion and transformation pipelines using PostgreSQL and Neo4j, optimized with indexing and caching to reduce decision latency by 35%. Improved release quality by 40% through unit, integration, and CI testing, contributing to a 20% uplift in early user engagement.",
 
       technologies: [
         "TypeScript",
@@ -72,7 +72,7 @@ const ProfessionalExperienceSection = () => {
       company: "B2X Limited",
       period: "Jul 2021 - Jun 2023",
       description:
-        "Improved frontend consistency and performance by resolving layout and responsiveness issues, leading to a 25% improvement in page responsiveness and a 30% reduction in user-reported errors. Built and maintained Node.js and Express backend services with MySQL, and managed containerized deployments using Docker and Kubernetes, achieving a 40% reduction in load times and a 25% increase in user engagement.",
+        "Improved frontend consistency and performance by resolving layout and responsiveness issues, leading to a 25% improvement in page responsiveness and a 30% reduction in user-reported errors. Built and maintained FastAPI backend services, and managed containerized deployment, achieving a 40% reduction in load times and a 25% increase in user engagement.",
 
       technologies: [
         "JavaScript",
@@ -81,7 +81,7 @@ const ProfessionalExperienceSection = () => {
         "Bootstrap",
         "React.js",
         "Node.js",
-        "Express",
+        "FastAPI",
         "MySQL",
         "Docker",
         "Kubernetes",
